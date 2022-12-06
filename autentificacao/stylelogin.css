@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 565px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 34px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 12px 25px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: lightgray;
+  outline: none;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: rgb(110, 110, 110);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -28px;
+  left: -25px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.checkbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkbox input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkbox label {
+  position: relative;
+  padding-left: 2.2em;
+  display: inline-block;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5em;
+  width: 1.5em;
+  background: lightgray;
+  margin-right: 0.5em;
+  border: 1px solid #999;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.checkbox label::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 0.75em;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.checkbox label:focus::before,
+.checkbox label:hover::before {
+  background: #ddd;
+}
+.checkbox input:checked + label::before {
+  background: #69d300;
+  border-color: #69d300;
+}
+
+.checkbox input:checked + label::after {
+  opacity: 1;
+}
+
+.p_chek {
+  color: #000000;
+  font-size: 18px;
+}
+
+.p_chek span {
+  color: rgb(75, 75, 255);
+}
+
+.p_chek span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.conc_btn {
+  width: 300px;
+  height: 100px;
+  background-color: #69d300;
+  border-radius: 60px;
+  border: none;
+  position: relative;
+  top: 50px;
+  transition: all 0.8s;
+  font-size: 22px;
+}
+
+.conc_btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.8s;
+  background-color: #0085ff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.337);
+}
+
+.cent_bnt {
+  text-align: center;
+}

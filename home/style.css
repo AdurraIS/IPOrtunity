@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+li {
+  list-style-type: none;
+}
+.navbar {
+  background-color: #232323;
+  height: 60px;
+  width: 100vw;
+  display: table;
+}
+.nav-logo {
+  float: left;
+  width: 156px;
+  height: 71px;
+  margin-left: 10vw;
+}
+
+.nav-items {
+  float: right;
+  margin-right: 10vw;
+  padding-top: 24px;
+}
+
+.nav-links {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 39px;
+}
+.section1 {
+  padding-left: 12vw;
+  padding-right: 12vw;
+  width: 100vw;
+  height: 480px;
+  background: url("../img/Background.png");
+  background-size: cover;
+  padding-top: 100px;
+}
+.left1 {
+  float: left;
+}
+.titulo1 {
+  font-size: 30px;
+}
+.green {
+  color: #69d300;
+}
+.descricao1 {
+  width: 30vw;
+  font-size: 18px;
+}
+.jogoimg {
+  float: right;
+  width: 501px;
+  height: 304px;
+}
+.section2 {
+  padding-top: 30px;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+}
+.black {
+  color: #000;
+}
+.empresaimg {
+  width: 300px;
+  height: 300px;
+}
+.playbtn {
+  width: 300px;
+  height: 100px;
+  background-color: #02baaf;
+  border-radius: 60px;
+  border: none;
+  position: relative;
+  top: 50px;
+  transition: all 0.8s;
+  font-size: 22px;
+}
+
+.playbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.8s;
+  background-color: #0085FF;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.337);
+}
+.bgwhite {
+  float: left;
+  background-color: #fff;
+  height: 290px;
+  width: 100vw;
+}
+.bggray {
+  float: left;
+  background-color: #282828;
+  height: 100px;
+  width: 100vw;
+}
+.section3{
+  font-size: 25px;
+  text-align: center;
+  background-color: #282828;
+  height: 450px;
+  width: 100vw;
+}
+.learnbtn {
+  width: 300px;
+  height: 100px;
+  background-color: #69d300;
+  border-radius: 60px;
+  border: none;
+  position: relative;
+  transition: all 0.8s;
+  font-size: 22px;
+}
+.learnbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.8s;
+  background-color: #4B9800;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.337);
+}
+footer{
+  width: 100vw;
+  background-color: #000;
+  height: 60px;
+}

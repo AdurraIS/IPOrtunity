@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <link rel="stylesheet" href="stylelogin.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="../home/index.html"><img class="nav-logo" src="../img/IportunityLogo3.png" /></a>
+      <ul class="nav-items">
+        <li class="nav-links"><a href="../jogar/jogar.html"> Jogar</a></li>
+        <li class="nav-links">
+          <a href="../sobrenos/sobrenos.html"> Sobre Nós</a>
+        </li>
+        <li class="nav-links">
+          <a href="../areadeaprendizado/area.html"> Área de Aprendizado</a>
+        </li>
+        <li class="nav-links">
+            <a href="../autentificacao/login.html">Entrar </a>|
+          <a href="../autentificacao/registrar.html"> Cadastrar</a>
+        </li>
+      </ul>
+    </header>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="user" required="" />
+          <label>Usuário:</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="pass" required="" />
+          <label>Senha:</label>
+        </div>
+        <a href="#" class="checkbox">
+            <input type="checkbox" id="chk1" class="checkbox" name="chk" />
+            <label for="chk1">
+              <p class="p_chek">
+                Permanecer logado
+              </p>
+            </label>
+          </a>
+        <div class="cent_bnt" onclick="login()">
+          <input type="submit" value="Entrar" class="conc_btn" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var user = document.getElementById("user");
+      var pass = document.getElementById("pass");
+      var userls = localStorage.getItem(User);
+      var passls = localStorage.getItem(Pass);
+      function login(){
+        if(user==userls&& pass == passls){
+          localStorage.setItem('Logado', 1);
+        } else{ alert("Usuário ou seha incorreta.");
+        }
+      }
+    </script>
+  </body>
+</html>
